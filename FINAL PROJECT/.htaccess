@@ -1,0 +1,11 @@
+ErrorDocument 404 /notfound.html
+
+# mod_rewrite starts here
+
+RewriteEngine on
+
+Rewritecond %{REQUEST_FILENAME} !-d 
+
+Rewritecond %{REQUEST_FILENAME}\.html -f
+
+RewriteRule ^(.*)$ $1.html [NC,L]

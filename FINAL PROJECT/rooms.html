@@ -1,0 +1,189 @@
+<html>
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>The Gourmet Hotel</title>
+        <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100&amp;display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap" rel="stylesheet">
+        <link rel="icon" href="logo2.png" type="image/gif" sizes="16x16">
+	</head>
+    <body>
+        <header>
+            <a href="index.html" class="header-brand">The Gourmet Hotel</a>
+        <nav>
+            <ul>
+                <li><a href="index">Home</a></li>
+                <li><a href="rooms">Rooms</a></li>
+                <li><a href="bar">Bar</a></li>
+                <li><a href="events">Private Events</a></li>
+                <li><a href="reservations">Reservations</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="contact">Contact</a></li>
+            </ul>
+        </nav>
+        </header>
+        <div class="rooms-banner">
+            <p>Gourmet surely makes people comfortable in their place <br>the hotel invites guests to a choice of four rooms intimately appointed suites nestled around noisy surroundings.</p>
+        </div>
+        <div class="contentContainer" id="alpha">
+            <div class="image"><img src="rooms1.jpg"></div>
+            <div class="contentTitle">
+                <p>Alpha</p>
+                <div class="button1">
+                    <button onclick="openModel('myModal')">View more</button>
+                    <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h1>Room Alpha</h1>
+                        <p>Our smallest bed, with typical setup
+                            with built-in desk area.
+                            Custom tile and premium fixtures adorn the bathroom.
+                            Double doors open directly to main patio. 290 sq ft.</p>
+                        <p>WiFi and USB ports</p>
+                        <p>Bathroom</p>
+                        <p>Shower</p>
+                        <p>Flatscreen Tv with cable</p>
+                        <p>Minimum price within 6000</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contentContainer" id="bravo">
+            <div class="contentTitle">
+                <p>Bravo</p>
+                <div class="button1">
+                    <button onclick="openModel('bravoModal')">View more</button>
+                    <div id="bravoModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h1>Room Bravo</h1>
+                        <p>Our average bed, with typical setup
+                            with built-in desk area.
+                            Custom tile and premium fixtures adorn the bathroom.
+                            Double doors open directly to main patio. 350 sq ft.</p>
+                        <p>WiFi and USB ports</p>
+                        <p>Bathroom</p>
+                        <p>Shower</p>
+                        <p>Bathtub</p>
+                        <p>Spa</p>
+                        <p>Flatscreen Tv with cable</p>
+                        <p>Minimum price within 8000</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="image"><img src="rooms2.jpg"></div>
+        </div>
+        <div class="contentContainer" id="charlie">
+            <div class="image"><img src="rooms3.jpg"></div>
+            <div class="contentTitle">
+                <p>Charlie</p>
+                <div class="button1">
+                    <button onclick="openModel('charlieModal')">View more</button>
+                    <div id="charlieModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h1>Room Charlie</h1>
+                        <p>Our large bed, with typical setup
+                            with built-in desk area.
+                            Custom tile and premium fixtures adorn the bathroom.
+                            Double doors open directly to main patio. 450 sq ft.</p>
+                        <p>WiFi and USB ports</p>
+                        <p>Bathroom</p>
+                        <p>Shower</p>
+                        <p>Bathtub</p>
+                        <p>Spa</p>
+                        <p>Gym</p>
+                        <p>Flatscreen Tv with cable</p>
+                        <p>Minimum price within 10000</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contentContainer" id="delta">
+            <div class="contentTitle">
+                <p>Delta</p>
+                <div class="button1">
+                    <button onclick="openModel('deltaModal')">View more</button>
+                    <div id="deltaModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h1>Room Delta</h1>
+                        <p>Our biggest bed, with typical setup
+                            with built-in desk area.
+                            Custom tile and premium fixtures adorn the bathroom.
+                            Double doors open directly to main patio. 550 sq ft.</p>
+                        <p>WiFi and USB ports</p>
+                        <p>Bathroom</p>
+                        <p>Shower</p>
+                        <p>Bathtub</p>
+                        <p>Spa</p>
+                        <p>Gym</p>
+                        <p>Pool</p>
+                        <p>Flatscreen Tv with cable</p>
+                        <p>Minimum price within 12000</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="image"><img src="rooms4.jpg"></div>
+        </div>
+            <script>
+                function openModel (modalId) {
+                    var modal = document.getElementById(modalId);
+                    var close = modal.getElementsByClassName("close")[0];
+                    modal.style.display = "block";
+
+                    close.onclick = function() {
+                        modal.style.display = "none";
+                    }
+
+                    window.onclick = function(event) {
+                        if (event.target == modal) {
+                            modal.style.display = "none";
+                        }
+                    }
+                }
+            </script>  
+        </div>
+        <footer class="footer">
+            <div id="footer-content">
+                <a href="index.html"><img src="logo2.png"></a>
+                <figcaption>THE GOURMET HOTEL <br> The best place to be</figcaption>
+            </div>
+            <div id="footer-content">
+                <p><a href="https://www.google.com/maps/place/52+Mustasa+St,+Marikina,+1805+Metro+Manila/@14.6547165,121.0954942,17z/data=!3m1!4b1!4m5!3m4!1s0x3397b9c1e9487627:0xc2c54a731882509e!8m2!3d14.6547113!4d121.0976829" target="_blank">Mustasa St. Tumana, Marikina City</a></p>
+                <p><a href="tel:024773848">(02) 477-38-48</a></p>
+                <p><a href="mailto: thegourmethotel@google.com">thegourmethotel@gmail.com</a></p>
+            </div>
+            <div id="footer-content">
+                <ul>
+                    <p><a href="rooms.html">Rooms</a></p>
+                    <li><a href="rooms.html#alpha">Alpha</a></li>
+                    <li><a href="rooms.html#bravo">Bravo</a></li>
+                    <li><a href="rooms.html#charlie">Charlie</a></li>
+                    <li><a href="rooms.html#delta">Delta</a></li>
+                </ul>
+            </div>
+            <div id="footer-content">
+                <ul>
+                    <p><a href="bar.html">Bar</a></p>
+                    <li><a href="bar.html#wine">Wine</a></li>
+                    <li><a href="bar.html#cocktail">Cocktail</a></li>
+                    <li><a href="bar.html#beer">Beer</a></li>
+                    <li><a href="bar.html#snack">Snacks</a></li>
+                </ul>
+            </div>
+            <div id="footer-content">
+                <ul>
+                    <p><a href="events.html">Private Events</a></p>
+                    <li><a href="events.html#party">Parties</a></li>
+                    <li><a href="events.html#wedding">Weddings</a></li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>

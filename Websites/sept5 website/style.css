@@ -1,0 +1,382 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* Start of my Codes */
+
+
+
+body {
+    font-family: 'Catamaran', sans-serif;
+    background-color: #f3f3f3;
+    width: auto;
+}
+
+.synopsis {
+    margin: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.synopsis h1 {
+    padding: 0 0 50px 0;
+    font-size: 30px;
+}
+
+.synopsis p{
+    padding-bottom: 20px;
+}
+
+* {
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    height: 100px;
+     z-index: 1;
+}
+
+header .header-brand {
+    font-family: 'Catamaran', sans-serif;
+    font-size: 24px;
+    font-weight: 900;
+    color: #111;
+    text-transform: uppercase;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav ul {
+    display: block ;
+    font-size: 16px;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+nav ul li {
+    display: inline-block;
+    float: left;
+    padding-right: 16px;
+    
+}
+
+nav ul li a {
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 900;
+    color: #111;
+}
+
+.header-case {
+    display: none;
+}
+
+/* index-banner */
+
+.index-banner {
+    width: 100%;
+    background-image: url("marvel.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: calc(100vh - 100px);
+    background-position: center;
+    
+    
+}
+
+.vertical-center h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 30px ;
+    
+    
+}   
+
+
+.index-banner h1 {
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 70px;
+    color: black;
+    text-align: center;
+    text-shadow: 2px 2px 8px white;
+    font-style: italic;
+    line-height: 40px;
+    
+}
+
+.vertical-link div {
+    margin: 20px;
+    width: calc(100%-40px);
+    height: 100px;
+    display: block;
+    background-color: gray;
+    text-align: center;
+    vertical-align: middle;
+    
+    
+}
+
+.vertical-link div h3 {
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    color: #fff;
+    text-align: center;
+    line-height: 100px;
+    text-transform: uppercase;
+    
+}
+
+/* footer */
+
+footer {
+    background-color: black;
+    color: white;
+    font-style: italic;
+    font-size: 16px;
+    width: calc(100%-80px);
+    padding: 40px;
+    overflow: hidden;
+}
+
+.footer img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+/* The Avengers (2012) */
+
+.index-banner-2012 {
+    width: 100%;
+    background-image: url("avengers2012.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: calc(100vh - 100px);
+    background-position: center;
+}
+
+/* Avengers: Age of Ultron (2015) */
+
+.index-banner-2015 {
+    width: 100%;
+    background-image: url("avengers2015.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: calc(100vh - 100px);
+    background-position: center;
+}
+
+/* Captain America: Civil War (2016) */
+
+.index-banner-2016 {
+    width: 100%;
+    background-image: url("avengers2016.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: calc(100vh - 100px);
+    background-position: center;
+}
+
+/* Avengers: Infinity War (2017) */
+
+.index-banner-2017 {
+    width: 100%;
+    background-image: url("avengers2017.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: calc(100vh - 100px);
+    background-position: center;
+}
+
+/* Avengers: End Game (2018) */
+
+.index-banner-2018 {
+    width: 100%;
+    background-image: url("avengers2018.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: calc(100vh - 100px);
+    background-position: center;
+}
+
+/* References */
+
+
+
+@media only screen and (min-width: 1000px) {
+
+    .wrapper {
+        width: 1000px;
+        margin: 100px auto 0px;
+    }
+
+    header .header-brand {
+    margin: 25px 0;
+    text-align: left;
+    line-height: 10px;
+    padding: 20px;
+    border-right: 3px solid black;
+    float: left;
+    }
+
+    nav ul {
+        float: left;
+        margin: 40px;
+        line-height: 20px;
+    }
+
+    nav ul li {
+        padding-right: 50px ;
+    }
+    
+    
+    .header-case {
+        display: block;
+        font-family: 'Catamaran', sans-serif;
+        font-size: 16px;
+        font-weight: 900;
+        color: #111;
+        float: right;
+        padding-right: 100px;
+        margin-top: 40px;
+        line-height: 20px;
+        padding-left: 10px;
+        border-left: 3px solid black;
+    }
+    .index-banner {
+        height: 500px;
+    }
+
+    .vertical-link div {
+        margin: 10px;
+        height: 250px;
+    }
+
+    .verical-list-1 {
+        width: calc(25% - 20px) !important;
+        float: left;
+    }
+       
+    .verical-list-2 {
+        width: calc(50% - 20px) !important;
+        float: left;
+    }    
+
+    footer {
+        width: 100%;
+        padding-top: 20px;
+        margin-top: 800px;
+    }
+
+    
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+function Person(name, skinColor, age) {
+    this.name = name;
+    this.skinColor = skinColor;
+    this.age = age;
+    this.updateAge = function() {
+        return ++this.age;
+    }
+}
+
+let person01 = new Person("Aris", "Brown", 23);
+let person02 = new Person("Aristotle", "Brown", 25);
+
+console.log(person02.name);
+console.log(person02.age);
+console.log(person02.skinColor);
+console.log(person01.name);
+console.log(person01.age);
+console.log(person01.skinColor);
+
+function aris(val) {
+    if (val >10 && val <20){
+    return "Good";
+    }
+    else 
+    return "Bad"
+}
+
+console.log(aris(1));
+
+function aristotle(val) {
+    if (val >10 || val <20){
+    return "Good";
+    }
+    else 
+    return "Bad"
+}
+
+console.log(aristotle(0));
+
+
+</script>
+</html>

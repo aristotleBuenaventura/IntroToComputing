@@ -1,0 +1,41 @@
+body {
+    background-color: white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    font-size: 30px;
+   
+}
+
+.month {
+    text-align: center;
+    background-color: black;
+    letter-spacing: 1px;
+    color: white;
+    padding: 25px;
+    border: 1px solid lightblue;
+}
+
+table, th, td {
+    width: 100%;
+    table-layout: fixed;
+    text-align: center;
+    border-collapse: collapse;
+    border: 1px solid lightblue;
+    color:black;
+}
+
+th {
+    background-color: yellow;
+}
+
+td {
+    background-color: black;
+    color: white;
+}
+
+td:hover {
+    background-color: lightsalmon;
+}
